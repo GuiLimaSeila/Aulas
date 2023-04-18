@@ -54,17 +54,24 @@ if (aa >=0){
     };
 
     //resultado tipos de triangulo
+    //triangulo Equilátero
     if (nm1 == nm2 && nm1 == nm3 && nm2 == nm3){
         document.getElementById("triangulo").innerHTML = `Equilátero`;
-    }else if (nm1 + nm2 < nm3 || nm3 + nm2 < nm1 || nm3 + nm1 < nm2 ){
+    }
+    //Triangulo com medidas impossíveis
+    else if (nm1 + nm2 < nm3 || nm3 + nm2 < nm1 || nm3 + nm1 < nm2 ){
         document.getElementById("perimetro").innerHTML = `Triangulo com medidas impossíveis`;
         document.getElementById("tipo2").innerHTML = `Triangulo com medidas impossíveis`;
         document.getElementById("tipo1").innerHTML = `Triangulo com medidas impossíveis`;
         document.getElementById("area").innerHTML = `Triangulo com medidas impossíveis`;
         document.getElementById("triangulo").innerHTML = `Triangulo com medidas impossíveis`;
-    } else if(nm1 != nm2 && nm1 != nm3 && nm2 != nm3){
+    } 
+    //triangulo Escaleno
+    else if(nm1 != nm2 && nm1 != nm3 && nm2 != nm3){
         document.getElementById("triangulo").innerHTML = `Escaleno`;
-    } else if (nm1 == nm2 != nm3|| nm2 == nm3 != nm1 || nm1 == nm3 != nm2){
+    } 
+    //triangulo Isóceles
+    else if (nm1 == nm2 != nm3|| nm2 == nm3 != nm1 || nm1 == nm3 != nm2){
         document.getElementById("triangulo").innerHTML = `Isóceles`;
     } 
 
