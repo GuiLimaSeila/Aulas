@@ -4,6 +4,8 @@ function triangulo(){
     let nm2 = Number(document.getElementById("num2").value);
     let nm3 = Number(document.getElementById("num3").value);
 
+    
+
     //variavel perimetro
     let p= nm1 + nm2 + nm3 ;
 
@@ -55,6 +57,10 @@ if (aa >=0){
     if (nm1 == nm2 && nm1 == nm3 && nm2 == nm3){
         document.getElementById("triangulo").innerHTML = `Equilátero`;
     }else if (nm1 + nm2 < nm3 || nm3 + nm2 < nm1 || nm3 + nm1 < nm2 ){
+        document.getElementById("perimetro").innerHTML = `Triangulo com medidas impossíveis`;
+        document.getElementById("tipo2").innerHTML = `Triangulo com medidas impossíveis`;
+        document.getElementById("tipo1").innerHTML = `Triangulo com medidas impossíveis`;
+        document.getElementById("area").innerHTML = `Triangulo com medidas impossíveis`;
         document.getElementById("triangulo").innerHTML = `Triangulo com medidas impossíveis`;
     } else if(nm1 != nm2 && nm1 != nm3 && nm2 != nm3){
         document.getElementById("triangulo").innerHTML = `Escaleno`;
