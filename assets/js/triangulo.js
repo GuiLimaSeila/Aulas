@@ -19,7 +19,7 @@ function triangulo(){
     let a1= Math.sqrt(a2);
 
     //variavel arredondar perimetro
-   let pa = Math.ceil(p)
+   let pa = Math.ceil(p) ;
 
    //resultado perimetro
     if (pa >=0){
@@ -38,7 +38,7 @@ function triangulo(){
     };
 
     //variavel arredondar area
-    let aa = Math.ceil(a1)
+    let aa = Math.ceil(a1) ;
 
     //resultado area
 if (aa >=0){
@@ -73,6 +73,6 @@ if (aa >=0){
     //triangulo Isóceles
     else if (nm1 == nm2 != nm3|| nm2 == nm3 != nm1 || nm1 == nm3 != nm2){
         document.getElementById("triangulo").innerHTML = `Isóceles`;
-    } 
+    } ;
 
 }
