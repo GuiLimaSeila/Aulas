@@ -7,7 +7,7 @@ function triangulo(){
     
 
     //variavel perimetro
-    let p= nm1 + nm2 + nm3 ;
+    let p= (nm1 + nm2 + nm3).toFixed(2) ;
 
     //variavel semi-perimetro
     let sp= (nm1 + nm2 + nm3)/2 ;
@@ -16,21 +16,20 @@ function triangulo(){
     let a2= sp*(sp+nm1)*(sp+nm2)*(sp+nm3);
 
     //variavel raiz quadrada
-    let a1= Math.sqrt(a2);
+    let a1= (Math.sqrt(a2)).toFixed(2);
 
     //variavel arredondar perimetro
-   let pa = Math.ceil(p) ;
 
    //resultado perimetro
-    if (pa >=0){
-    document.getElementById("perimetro").innerHTML = `${pa}`;
+    if (p >=0){
+    document.getElementById("perimetro").innerHTML = `${p}`;
     }
 
-    //variavel inpar ou par
-    let totalis = pa % 2;
+    //variavel impar ou par
+    let totalis = p % 2;
 
-    //resultado inpar ou par
-    if (totalis % 2 == 0) {
+    //resultado impar ou par
+    if (totalis == 0) {
         document.getElementById("tipo1").innerHTML = `par`;
     }
     else {
@@ -38,20 +37,20 @@ function triangulo(){
     };
 
     //variavel arredondar area
-    let aa = Math.ceil(a1) ;
+    let a = Math.ceil(a1) ;
 
     //resultado area
-if (aa >=0){
-    document.getElementById("area").innerHTML = `${aa}`;
+if (a >=0){
+    document.getElementById("area").innerHTML = `${a}`;
 };
 //variavel inpar ou par
-    let totalis2 = aa % 2;
-    if (totalis2 % 2 == 0) {
+    let totalis2 = a % 2;
+    if (totalis2 == 0) {
         document.getElementById("tipo2").innerHTML = `par`;
     }
     else {
         document.getElementById("tipo2").innerHTML = `impar`;
-    };
+    }
 
     //resultado tipos de triangulo
     //triangulo Equilátero
@@ -73,6 +72,6 @@ if (aa >=0){
     //triangulo Isóceles
     else if (nm1 == nm2 != nm3|| nm2 == nm3 != nm1 || nm1 == nm3 != nm2){
         document.getElementById("triangulo").innerHTML = `Isóceles`;
-    } ;
+    } 
 
 }
