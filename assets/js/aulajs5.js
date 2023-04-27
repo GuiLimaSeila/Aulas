@@ -117,5 +117,4 @@ function divisores() {
             divi.push(i);
         }
     console.log(divi)
-
 }
