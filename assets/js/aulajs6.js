@@ -1,14 +1,19 @@
-let nome= prompt("Digite uma frase");
-let palavras = nome.split(' ')
-let letrinhas= nome.length;
-let i= 0;
-if(nome == "" || nome == " "){
+let nome = prompt("Digite uma frase");
+let au = nome.trim('');
+let palavras = au.split(' ');
+let i = 0;
+let tamanho = 0;
+
+if (nome == "" || nome == " ") {
     console.log("Digite algo 😡")
 
-} else{
-while(i < palavras.length){
-i++
-}
-
-console.log("Sua frase foi: " + nome + "\n" + "Ela tem: " + i + " palavras" + "\n");
-}
+} else {
+    while (i < palavras.length) {
+        if (palavras[i] == "") {
+            tamanho++;
+        }
+        i++;
+    }
+    console.log("Sua frase foi: " + nome);
+    console.log("Ela tem: ", i - tamanho, " palavras");
+} 
