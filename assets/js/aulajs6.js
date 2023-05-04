@@ -1,6 +1,5 @@
 let nome = prompt("Digite uma frase");
-let au = nome.trim('');
-let palavras = au.split(' ');
+let palavras = nome.split(' ');
 let i = 0;
 let tamanho = 0;
 
