@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    height: 100px;
+}
+aside{
+    background-color: red;
+    height: 625px;
+    width: 200px;
+}
+main{
+    background-color: blue;
+    display: flex;
+    height: 625;
+    width: 100%;
+}
+footer{
+    background-color: green;
+    height: 50px;
+
+}
+div{
+    display: flex;
+}
