@@ -40,7 +40,7 @@ nome3.push(nome2);
 alert(nome3);*/
 
 //LET's das perguntas
-let nome = prompt("Digite o seu nome")
+/*let nome = prompt("Digite o seu nome")
 let nomePushado = [];
 nomePushado.push(nome);
 
@@ -141,4 +141,5 @@ let mediaPeso = somaPeso / pesoPushado.length
 
 console.log(`A media de altura é: ${mediaAltura}M`)
 console.log(`A media de idade é:  ${mediaIdade} anos`)
-console.log(`A media de peso é:  ${mediaPeso}KG`)
+console.log(`A media de peso é:  ${mediaPeso}KG`) */
+
