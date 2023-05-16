@@ -143,3 +143,67 @@ console.log(`A media de altura é: ${mediaAltura}M`)
 console.log(`A media de idade é:  ${mediaIdade} anos`)
 console.log(`A media de peso é:  ${mediaPeso}KG`) */
 
+/*let nomeJogo = prompt("Digite o nome de um jogo").toUpperCase()
+let jogoArray = []
+jogoArray.push(nomeJogo)
+
+let dicaArray = []
+
+let dica1 = prompt("Digite a primeira dica APENAS EM EMOJIS (Windows + .)")
+dicaArray.push(dica1)
+
+let dica2 = prompt("Digite a o genero do jogo").toUpperCase()
+dicaArray.push(dica2)
+
+let dica3 = prompt("Digite a inicial do jogo").toUpperCase()
+dicaArray.push(dica3)
+
+let dica4 = prompt("Descreva o protagonista do jogo").toUpperCase()
+dicaArray.push(dica4)
+
+let dica5 = prompt("Descreva o final de jogo em uma palavra").toUpperCase()
+dicaArray.push(dica5)
+
+let resposta1 = prompt("Os emojis que descrevem esse jogo são: " + dicaArray[0]).toUpperCase()
+if (resposta1 == jogoArray) {
+    alert("Parabéns você acertou!!! sua pontuação é: 100")
+
+} else {
+
+    let resposta2 = prompt("O genero do jogo é: " + dicaArray[1]).toUpperCase()
+    if (resposta2 == jogoArray) {
+        alert("Parabéns você acertou!!! sua pontuação é: 80")
+
+    } else {
+
+        let resposta3 = prompt("O final do jogo foi descrito como: " + dicaArray[2]).toUpperCase()
+        if (resposta3 == jogoArray) {
+            alert("Parabéns você acertou!!! sua pontuação é: 50")
+
+        } else {
+
+            let resposta4 = prompt("A inicial do jogo é: " + dicaArray[3]).toUpperCase()
+            if (resposta4 == jogoArray) {
+                alert("Parabéns você acertou!!! sua pontuação é: 20")
+
+            } else {
+
+                let resposta5 = prompt("A inicial do jogo é: " + dicaArray[4]).toUpperCase()
+                if (resposta5 == jogoArray) {
+                    alert("Parabéns você acertou!!! sua pontuação é: 10")
+
+                } else {
+
+                    alert("Você errou, o jogo era:" + jogoArray[0])
+                }
+            }
+        }
+    }
+}
+*/
+/*let nomes = prompt("digite palavras")
+let banana = nomes.split(" ")
+while(nomes != "parar"){
+    nomes = prompt("digite palavras")
+}
+console.log("suas palavras são: " + banana[0] + " " + banana[2] )*/
