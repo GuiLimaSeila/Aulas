@@ -8,7 +8,42 @@
     <link rel="stylesheet" href="assets/css/background.css">
     <title>Parte 2</title>
 </head>
+
 <body>
+    <h1>Lista dupla</h1>
+    <div id="pai">
+        <div class="filho">
+            <h3> Equipe A</h3>
+            <p id="quato1a">1º Quarto:</p>
+            <p id="quato2a">2º Quarto:</p>
+            <p id="quato3a">3º Quarto:</p>
+            <p id="quato4a">4º Quarto:</p>
+            <button onclick="maisUmA()">1 Ponto</button>
+            <button onclick="maisDoisA()">2 Pontos</button>
+            <button onclick="maisTresA()">3 Pontos</button>
+            <button onclick="diminuirA()">Diminuir</button>
+        </div>
+        <div class="filho">
+            <h3>Placar atual</h3>
+            <h2 id="ladoA"></h2>
+            <h3>X</h3>
+            <h2 id="ladoB"></h2>
+            <button onclick="maisUmB()">1 Ponto</button>
+        </div>
+        <div class="filho">
+            <h3> Equipe B</h3>
+            <p id="quato1b">1º Quarto:</p>
+            <p id="quato2b">2º Quarto:</p>
+            <p id="quato3b">3º Quarto:</p>
+            <p id="quato4b">4º Quarto:</p>
+            <button onclick="maisUmB()">1 Ponto</button>
+            <button onclick="maisDoisB()">2 Pontos</button>
+            <button onclick="maisTresB()">3 Pontos</button>
+            <button onclick="diminuirB()">Diminuir</button>
+        </div>
+
+    </div>
+
     <!--
     <div>
         <h1>Aula JS2 Primeira Temporada</h1>
@@ -45,4 +80,5 @@
     </div>
 -->
 </body>
+
 </html>

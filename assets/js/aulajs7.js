@@ -207,3 +207,96 @@ while(nomes != "parar"){
     nomes = prompt("digite palavras")
 }
 console.log("suas palavras são: " + banana[0] + " " + banana[2] )*/
+/*var list = [];
+
+function adicionarEntrada(){
+    let entrada = document.getElementById("campoTexto").value;
+    list.push(entrada)
+    document.getElementById("campoTexto").value = ''
+    let msg = ""
+    for (let i = 0;i < list.length; i++ ){
+        msg += `<p> ${list[i]}<p>`
+    }
+    document.getElementById("result").innerHTML = msg;
+}
+
+var list2 = [];
+
+function adicionarEntrada2(){
+    let entrada = document.getElementById("campoTexto2").value;
+    list2.push(entrada)
+    document.getElementById("campoTexto2").value = ''
+    let msg = ""
+    for (let i = 0;i < list2.length; i++ ){
+        msg += `<p> ${list2[i]}<p>`
+    }
+    document.getElementById("result2").innerHTML = msg;
+    
+}
+var msg2 = 0
+if(list.length == list2.length){
+ 
+for (let i = 0;i < list2.length; i++ ){
+    msg2+= `<p class="result3">${list[i] * list2[i]}<p>`
+}
+document.getElementById("result3").innerHTML = msg2;
+}*/
+/*const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+const novo = arr.filter(num => num % 2 == 0);
+console.log(novo)
+
+var array1 = ['branco',10,20,30,null];
+var array2 = ['verde',40,50,60,undefined];
+array1 = array1.concat(array2);
+console.log(array1)
+
+var array3 = ['branco',10,20,30];
+array3 = array3.join('-')
+console.log(array3)*/
+var primeiroQuartoA = 0;
+var segundoQuartoA = 0;
+var terceiroQuartoA = 0;
+var quartoQuartoA = 0;
+
+
+var placarA = 0;
+var placarB = 0;
+
+function maisUmA() {
+    placarA += 1
+    document.getElementById("ladoA").innerHTML = placarA
+}
+function maisDoisA() {
+    placarA += 2
+    document.getElementById("ladoA").innerHTML = placarA
+}
+function maisTresA() {
+    placarA += 3
+    document.getElementById("ladoA").innerHTML = placarA
+}
+function diminuirA() {
+    if (placarA > 0) {
+        placarA -= 1
+        document.getElementById("ladoA").innerHTML = placarA
+    }
+}
+
+
+function maisUmB() {
+    placarB += 1
+    document.getElementById("ladoB").innerHTML = placarB
+}
+function maisDoisB() {
+    placarB += 2
+    document.getElementById("ladoB").innerHTML = placarB
+}
+function maisTresB() {
+    placarB += 3
+    document.getElementById("ladoB").innerHTML = placarB
+}
+function diminuirB() {
+    if (placarB > 0) {
+        placarB -= 1
+        document.getElementById("ladoB").innerHTML = placarB
+    }
+}

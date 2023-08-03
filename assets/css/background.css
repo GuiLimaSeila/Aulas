@@ -1,5 +1,47 @@
 body{
-    background-image: url(https://t3.ftcdn.net/jpg/05/30/18/72/360_F_530187270_LPCyTc6L7aBVS0wiyP0ZkFiNEQSL7s7t.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+background-color: #f5f5f5;
+text-align: center;
+font-family: sans-serif;
+}
+div{
+    margin-top: 5%;
+    margin-right: 35px;
+    padding-left: 2%;
+    margin-left: 10%;
+}
+p{
+    color: black;
+    text-align: justify;
+    margin-top: 0;
+    padding: 0%;
+    border: 0;
+}
+#pai{
+    display: flex;
+}
+.filho{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.filho2{
+    background-color: white;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    margin-top: 5%;
+    margin-right: 0px;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+h2{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.result3{
+    text-align: center;
+}
+#result3{
+    text-align: center;
 }
