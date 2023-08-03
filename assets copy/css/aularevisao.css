@@ -93,3 +93,9 @@ border-radius: 3px;
 .input-field input:focus{
   outline: none;
 }
+
+#result{
+  display:flex;
+  gap: 2rem;
+  
+}

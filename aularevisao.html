@@ -12,32 +12,66 @@
 </head>
 
 <body>
+    <!--Start of Main-->
     <main>
         <section id="picture">
+            <!--Picture-->
             <img src="assets copy/images/picture.svg" alt="">
         </section>
         <section id="form">
+            <!--Start of Calculator-->
             <div id="calculator">
+                <!--Title-->
                 <h1 id="title">Calculadora - IMC</h1>
                 <div class="input-box">
+                    <!--Label weight-->
                     <label for="weight">Peso em kg</label>
                     <div class="input-field">
                         <i class="fa-solid fa-weight-hanging icon"></i>
+                        <!--Input weight-->
                         <input type="number" id="weight" name="weight" required>
                         <span class="unit">Kg</span>
                     </div>
                 </div>
                 <div class="input-box">
+                    <!--Label height-->
                     <label for="height">Altura em metros</label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler icon"></i>
+                        <!--Input height-->
                         <input type="number" id="height" name="height" required>
                         <span class="unit">M</span>
                     </div>
                 </div>
+                <!--Button-->
                 <button id="calculate">Calcular</button>
             </div>
+            <!--End of Calculator-->
+            <div id="infos">
+                <!--Start of info-->
+                <div id="result">
+                    <div id="imc">
+                        <!--Value-->
+                        <span id="value"></span>
+                        <!--Status-->
+                        <span id="status">Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <!--Description-->
+                        <span id="text"></span>
+                    </div>
+                </div>
+                <div id="more-info">
+                    <!--more info/web site-->
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.html">
+                        Mais informações sobreo o IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <!--End of info-->
         </section>
+        <!--End of Main-->
     </main>
 
 </body>
