@@ -160,12 +160,12 @@ img {
   transition: color 0.5s;
 }
 
-/* more info web click hover*/
+/* more info web click hover */
 #more-info a:hover {
   color: #cbd5e1;
 }
 
-/* hidden*/
+/* hidden */
 .hidden{
 display: none;
 }
@@ -176,7 +176,7 @@ font-size: 2.25rem;
 position: relative;
 }
 
-/* title red line*/
+/* title red line */
 #title::after{
   position: absolute;
   content: "";
@@ -188,14 +188,14 @@ position: relative;
   left: 0.4rem;
 }
 
-/* responsiveness 1024px*/
+/* responsiveness 1024px */
 @media screen and (max-width: 1024px){
   #picture{
     display: none;
   }
 }
 
-/* responsiveness 500px*/
+/* responsiveness 500px */
 @media screen and (max-width: 500px){
   #picture {
     display: none;
