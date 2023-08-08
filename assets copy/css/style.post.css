@@ -7,11 +7,11 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-image: url(assets copy/images/wallpaper.jpeg);
 }
 
 h1 {
-    color: #d30000;
+    color: #0375a7;
     text-align: center;
 }
 
@@ -47,7 +47,7 @@ textarea {
 }
 
 button {
-    background-color: #d30000;
+    background-color: #049abd;
     color: #fff;
     cursor: pointer;
     width: 100%;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background-color: #a00000;
+    background-color: #0375a7;
     transition: 0.3s;
 }
 
@@ -68,12 +68,12 @@ button:hover {
 }
 
 .itemPost h2 {
-    color: #a00000;
+    color: #0375a7;
     margin-bottom: 5px;
 }
 
 .itemPost button {
-    background-color: #d30000;
+    background-color: #049abd;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -93,10 +93,10 @@ button:hover {
 }
 
 #itemPost button:hover{
-    background-color: #a00000;
+    background-color: #0375a7;
     transition: 0.3s;
 }
 
 .hidden{
-    
+    display: none;
 }
