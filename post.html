@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets copy/css/style.post.css">
-    <script src="assets copy/js/todolist.js"></script>
+    <script src="assets copy/js/style.post.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
 </head>
+
 <body>
-    
+    <main>
+        <h1>Próximos Posts</h1>
+        <div id="postForm">
+            <div>
+                <label for="title">Título</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="category">Categoria</label>
+                <input type="text" name="category" id="category">
+            </div>
+            <div>
+                <label for="resume">Resumo</label>
+                <textarea name="resume" type="text" id="resume" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="autor">Autor</label>
+                <input type="text" name="autor" id="autor" required>
+            </div>
+            <div>
+                <label for="date">Data de Publicação</label>
+                <input type="date" name="date" id="date">
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
