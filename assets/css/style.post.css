@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/wallpaper.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+}
+
+h1 {
+    color: #0375a7;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#postForm {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #04131a;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 460px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 200px;
+}
+
+button {
+    background-color: #049abd;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #0375a7;
+    transition: 0.3s;
+}
+
+.itemPost {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.itemPost h2 {
+    color: #0375a7;
+    margin-bottom: 5px;
+}
+
+.itemPost button {
+    background-color: #049abd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#list{
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #04131a;
+}
+
+#itemPost button:hover{
+    background-color: #0375a7;
+    transition: 0.3s;
+}
+
+.hidden{
+    display: none;
+}
