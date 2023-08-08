@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets copy/js/jd.js" defer></script>
+    <title>John Doe</title>
+    <link rel="stylesheet" href="assets copy/css/aularevisao.css">
+</head>
+<body>
+    <div class="input-box">
+        <!--Label name-->
+        <label for="name">Seu Nome</label>
+        <div class="input-field">
+            <!--Input name-->
+            <input type="text" id="personName" name="name" required>
+        </div>
+    </div>
+    <div class="input-box">
+        <!--Label age-->
+        <label for="age">Sua Idade</label>
+        <div class="input-field">
+            <!--Input age-->
+            <input type="number" id="personAge" name="age" required>   
+        </div>
+    </div>
+    <div class="input-box">
+        <!--Label eye color-->
+        <label for="eyecolor">Cor dos seus Olhos</label>
+        <div class="input-field">
+            <!--Input eye color-->
+            <input type="text" id="eyeColor" name="eyecolor" required>   
+        </div>
+    </div>
+    <button id="forms" onclick="formsClick()">Cadastrar</button>
+    <div id="resultForm">
+        <!--Description-->
+        <span id="text"></span>
+    </div>
+</body>
+</html>
