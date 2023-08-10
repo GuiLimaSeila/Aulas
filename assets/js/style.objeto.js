@@ -26,7 +26,7 @@ console.log(personObject); */
 const user1 = new User('João', 30);
     user1.introduce();
 */
-
+/*
 class Pizza {
     constructor(base, sauce, toppings, cheese){
         this.base = base;
@@ -83,3 +83,48 @@ const myPizza = new Pizza ('traditional', 'tomato', 'pepperoni', 'mozzarella')
 console.log(myPizza.getDescription());
 let totalTime = myPizza.getTimerBase() + myPizza.getTimerSauce() + myPizza.getTimerToppings() + myPizza.getTimerCheese();
 console.log('Time to cook the pizza = ' + totalTime + ' minutes')
+*/
+
+/*class Calculator {
+    add(a, b){
+        return a + b;
+    }
+    multiply(a, b){
+        return a * b;
+    }
+    subtract(a, b){
+        return a - b;
+    }
+}
+
+const calculator = new Calculator();
+
+const sumResult = calculator.add(5, 3);
+console.log("Sum:", sumResult);
+
+const multiplicationResult = calculator.multiply(4, 2);
+console.log("Multiplication:", multiplicationResult);
+
+const subtractionResult = calculator.subtract(10, 4);
+console.log("Subtraction:", subtractionResult); */
+
+class Witch {
+    constructor(name, patron, house, colorEyes) {
+        this.name = name;
+        this.patron = patron;
+        this.house = house;
+        this.colorEyes = colorEyes;
+    }
+
+    getName() {
+        return `O nome do bruxo(a) é: ${this.name}`;
+    }
+    getHouse() {
+        return `Ele(a) está na casa: ${this.house}`;
+    }
+    getPatron() {
+        return `Seu patrono é: ${this.patron}`
+    }
+}
+
+const witch1 = new Witch('Harry Potter', 'Deer', 'Grynffindor', 'green')
