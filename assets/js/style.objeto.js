@@ -128,3 +128,23 @@ class Witch {
 }
 
 const witch1 = new Witch('Harry Potter', 'Deer', 'Grynffindor', 'green')
+
+class TypeWitch extends Witch{
+    constructor(name, patron, house, colorEyes, typeWitch){
+        super(name, patron, house, colorEyes);
+        this.typeWitch = typeWitch;
+    }
+
+    getTypeWitch() {
+        if (this.typeWitch === 'P'){
+            return "Este bruxo é sanue puro";
+        } else if (this.typeWitch === 'M'){
+            return "Este bruxo é Mestiço";
+        } else {
+            return "Este é um trouxa";
+        }
+    }
+}
+
+const harry = new TypeWitch('Harry Potter', 'Deer', 'Grynffindor', 'green', 'M');
+console.log(harry);
