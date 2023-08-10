@@ -108,7 +108,8 @@ console.log("Multiplication:", multiplicationResult);
 const subtractionResult = calculator.subtract(10, 4);
 console.log("Subtraction:", subtractionResult); */
 
- class Witch {
+ /*class Witch {
+
     constructor(name, patron, house, colorEyes) {
         this.name = name;
         this.patron = patron;
@@ -157,5 +158,25 @@ class CamaraSecreta {
         this.verifyPwd = (pwdInput) => {
             return pwdInput == _pwd;
         }
+        this.acessChamber = () => {
+            let pwdInput = prompt("Digite a Senha");
+            if(this.verifyPwd(pwdInput)){
+                console.log(`Bem-Vendo ${this.name}`)
+            } else{
+                console.log("SAAAAAAAAAAAAAI")
+            }
+        }
+    }
+    showName(){
+        console.log(`Nome do bruxo: ${this.name}`);
     }
 }
+
+const myAccess1 = new CamaraSecreta("Harry Poter", "senha123")
+
+myAccess1.showName();
+
+myAccess1.name = "HP";
+myAccess1.pwd = "123";
+
+myAccess1.acessChamber(); */
