@@ -1,4 +1,4 @@
-let personSimple = "John Doe";
+/*let personSimple = "John Doe";
 
 const personObject = {
 firstName : "John",
@@ -10,4 +10,11 @@ eyeColor : "blue"
 personObject.age = 10; //Mudando para 10
 
 console.log(personSimple);
-console.log(personObject);
+console.log(personObject); */
+
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
