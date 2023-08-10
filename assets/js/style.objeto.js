@@ -39,7 +39,47 @@ class Pizza {
 getDescription() {
     return `A delicious pizza with ${this.base} base, ${this.sauce} sauce, ${this.toppings} toppings, and a lots of cheese.`;
 }
+
+getTimerBase(){
+    if(this.base == 'traditional'){
+        return 10;
+    } else if (this.base == "integral"){
+        return 15;
+    } else{
+        return 'This base does not exist!'
+    }
+}
+getTimerSauce(){
+    if(this.sauce == 'tomato'){
+        return 4;
+    } else if (this.sauce == 'pesto'){
+        return 6;
+    } else{
+        return 'This sauce does not exist!'
+    }
+}
+getTimerToppings(){
+    if(this.toppings == 'pepperoni'){
+        return 2;
+    } else if (this.base == 'bacon'){
+        return 3;
+    } else{
+        return 'This toppings does not exist!'
+    }
+}
+getTimerCheese(){
+    if(this.cheese == 'mozzarella'){
+        return 4;
+    } else if (this.cheese == 'cheddar'){
+        return 2;
+    } else{
+        return 'This cheese does not exist!'
+    }
+}
+
 }
 
 const myPizza = new Pizza ('traditional', 'tomato', 'pepperoni', 'mozzarella')
 console.log(myPizza.getDescription());
+let totalTime = myPizza.getTimerBase() + myPizza.getTimerSauce() + myPizza.getTimerToppings() + myPizza.getTimerCheese();
+console.log('Time to cook the pizza = ' + totalTime + ' minutes')
