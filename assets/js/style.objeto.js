@@ -108,7 +108,7 @@ console.log("Multiplication:", multiplicationResult);
 const subtractionResult = calculator.subtract(10, 4);
 console.log("Subtraction:", subtractionResult); */
 
-class Witch {
+ class Witch {
     constructor(name, patron, house, colorEyes) {
         this.name = name;
         this.patron = patron;
@@ -147,4 +147,15 @@ class TypeWitch extends Witch{
 }
 
 const harry = new TypeWitch('Harry Potter', 'Deer', 'Grynffindor', 'green', 'M');
-console.log(harry);
+console.log(harry); 
+
+class CamaraSecreta {
+    constructor(name, pwd){
+        this.name = name;
+        let _pwd = pwd;
+
+        this.verifyPwd = (pwdInput) => {
+            return pwdInput == _pwd;
+        }
+    }
+}
