@@ -1,4 +1,4 @@
-/*let personSimple = "John Doe";
+let personSimple = "John Doe";
 
 const personObject = {
 firstName : "John",
@@ -10,9 +10,9 @@ eyeColor : "blue"
 personObject.age = 10; //Mudando para 10
 
 console.log(personSimple);
-console.log(personObject); */
+console.log(personObject); 
 
-/*class User {
+class User {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -25,8 +25,8 @@ console.log(personObject); */
 }
 const user1 = new User('João', 30);
     user1.introduce();
-*/
-/*
+
+
 class Pizza {
     constructor(base, sauce, toppings, cheese){
         this.base = base;
@@ -83,9 +83,9 @@ const myPizza = new Pizza ('traditional', 'tomato', 'pepperoni', 'mozzarella')
 console.log(myPizza.getDescription());
 let totalTime = myPizza.getTimerBase() + myPizza.getTimerSauce() + myPizza.getTimerToppings() + myPizza.getTimerCheese();
 console.log('Time to cook the pizza = ' + totalTime + ' minutes')
-*/
 
-/*class Calculator {
+
+class Calculator {
     add(a, b){
         return a + b;
     }
@@ -106,9 +106,10 @@ const multiplicationResult = calculator.multiply(4, 2);
 console.log("Multiplication:", multiplicationResult);
 
 const subtractionResult = calculator.subtract(10, 4);
-console.log("Subtraction:", subtractionResult); */
+console.log("Subtraction:", subtractionResult); 
 
- /*class Witch {
+ class Witch {
+
 
     constructor(name, patron, house, colorEyes) {
         this.name = name;
@@ -179,4 +180,5 @@ myAccess1.showName();
 myAccess1.name = "HP";
 myAccess1.pwd = "123";
 
-myAccess1.acessChamber(); */
+myAccess1.acessChamber(); 
+
