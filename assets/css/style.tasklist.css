@@ -111,4 +111,8 @@ input{
 }
 .textPost{
     font-size: small;
+
+}
+.lineVerify{
+    text-decoration:line-through;
 }
