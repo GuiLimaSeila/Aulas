@@ -15,9 +15,16 @@ class TaskList {
     addPost(task) {
         this.tasks.push(task)
     }
-    verified(id) {
-        this.tasks.forEach
-    }
+    verified(){
+        taskList.tasks.forEach((task, tasks) =>{
+            if(tasks != true){
+            this[task.status] = true;
+        } else{
+            this[task.status] = false;
+        }
+    })
+    document.getElementById("textPost").classList.remove("lineVerify")
+}
 }
 
 
@@ -59,10 +66,10 @@ function showPosts() {
         showContent += `
         <div class="itemPost">
         <div class="textItem">
-            <p class="textPost">${nuevo.title}</p>
+            <p id="textPost">${nuevo.title}</p>
         </div>
         <div class="buttonArea">
-            <button onclick="verifyPost(${index})" class="checkButton"><i class="fa-solid fa-check"></i></button>
+            <button onclick="verified(${index})" class="checkButton"><i class="fa-solid fa-check"></i></button>
             <button onclick="editPost(${index})" class="editButton"><i class="fa-solid fa-pen"></i></button>
             <button onclick="removePost(${index})" class="deletButton"><i class="fa-solid fa-trash"></i></button>
         </div>
@@ -87,5 +94,5 @@ function editPost(index) {
 }
 
 function verified(){
-    taskList.verified();
+taskList.verified()
 }

@@ -109,7 +109,7 @@ input{
     display: flex;
     flex-direction: row;
 }
-.textPost{
+#textPost{
     font-size: small;
 
 }
