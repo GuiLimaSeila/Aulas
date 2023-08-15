@@ -12,7 +12,16 @@ class TaskList {
     constructor(){
 this.tasks =[]
 }
-addPost(tasks)
+addPost(task){
+    this.tasks.push(task)
+}
+deletePost(id){
+    this.tasks = this.tasks.filter(task => task.id != id)
+}
+editPost(){
+    const post = taskList.tasks[index]
+    document.getElementById("resume")
+}
 }
 
 
@@ -52,7 +61,7 @@ function showPosts() {
             `;
     });
 
-    document.getElementById("postForm").innerHTML = showContent;
+    document.getElementById("postArea").innerHTML = showContent;
     title = document.getElementById("resume").value= "";
 }
 function removePost(index){
@@ -61,4 +70,6 @@ function removePost(index){
 
 }
 
-function verifyPost()
+function verifyPost(index){
+
+}

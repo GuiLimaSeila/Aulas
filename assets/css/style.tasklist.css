@@ -81,6 +81,7 @@ input{
     align-items: center;
     justify-content: space-between;
     padding: .4rem;
+    margin-bottom: 1rem;
 }
 
 .checkButton{
@@ -107,4 +108,7 @@ input{
 .buttonArea{
     display: flex;
     flex-direction: row;
+}
+.textPost{
+    font-size: small;
 }
