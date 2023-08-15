@@ -16,6 +16,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 #postForm {
@@ -25,13 +26,14 @@ main {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
+}
+#inputsPlace{
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
 }
-
 
 button {
     background-color: #ccc;
@@ -40,6 +42,8 @@ button {
     width: 10%;
     height: 40px;
     border-radius: 8px;
+    margin-left: 0.3rem;
+    margin-bottom: 0.6rem;
 }
 
 input{
@@ -62,4 +66,45 @@ input{
     color: #fd1b1b;
     font-size:x-small;
     padding: 10px;
+    padding-left: 1.3rem;
+}
+
+.itemPost{
+    background-color: #ccc;
+    max-width: 600px;
+    margin-left: 18px;
+    width: 93%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4rem;
+}
+
+.checkButton{
+    width: 100%;
+    background-color: #fff;
+    width: 3rem;
+    border-radius: 2rem;
+}
+
+.editButton{
+    background-color: #049abd;
+    color: #fff;
+    width: 3rem;
+    border-radius: 2rem;
+}
+
+.deletButton{
+    background-color: #fd1b1b;
+    color: #fff;
+    width: 3rem;
+    border-radius: 2rem;
+}
+
+.buttonArea{
+    display: flex;
+    flex-direction: row;
 }
