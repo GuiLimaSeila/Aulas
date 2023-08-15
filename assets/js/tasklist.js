@@ -15,13 +15,6 @@ class TaskList {
     addPost(task) {
         this.tasks.push(task)
     }
-    deletePost(id) {
-        this.tasks = this.tasks.filter(task => task.id != id)
-    }
-    editPost() {
-        const post = taskList.tasks[index]
-        document.getElementById("resume") = post.title
-    }
     verified(id) {
         this.tasks.forEach
     }
@@ -69,9 +62,9 @@ function showPosts() {
             <p class="textPost">${nuevo.title}</p>
         </div>
         <div class="buttonArea">
-            <button onclick="verifyPost(${index.status})" class="checkButton"><i class="fa-solid fa-check"></i></button>
+            <button onclick="verifyPost(${index})" class="checkButton"><i class="fa-solid fa-check"></i></button>
             <button onclick="editPost(${index})" class="editButton"><i class="fa-solid fa-pen"></i></button>
-            <button onclick="removePost(${index.id})" class="deletButton"><i class="fa-solid fa-trash"></i></button>
+            <button onclick="removePost(${index})" class="deletButton"><i class="fa-solid fa-trash"></i></button>
         </div>
     </div>
             `;
@@ -84,4 +77,15 @@ function removePost(index) {
     taskList.tasks.splice(index, 1);
     showPosts();
 
+}
+
+function editPost(index) {
+    const post = taskList.tasks[index];
+    document.getElementById("resume") = post.title;
+
+    takIndex = index;
+}
+
+function verified(){
+    taskList.verified();
 }
