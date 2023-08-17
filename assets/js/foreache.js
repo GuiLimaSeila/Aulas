@@ -16,26 +16,41 @@ numbers.forEach((number, index) => {
 });
 
 console.error("Marcas de carros e seus modelos");
-const cars = [
-    {
-        marca: "Ford",
-        modelo: "Focus",
-    },
-    {
-        marca: "BMW",
-        modelo: "BMW Z4",
-    },
-    {
-        marca: "Fiat",
-        modelo: "Palio",
-    },
-    {
-        marca: "Audi",
-        modelo: "A3",
-    },
-];
+const cars = [];
 
-cars.forEach((car) => {
-    console.log(`Marca: ${car.marca} -
-    Modelo: ${car.modelo}`);
-});
+class Car {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model;
+    }
+}
+
+
+function moreCars() {
+    let brand = document.getElementById("addBrand").value;
+    let model = document.getElementById("addModel").value;
+    const nuevo = new Car(brand, model)
+    cars.push(nuevo)
+
+    cars.forEach((car) => {
+        console.log(`Marca: ${car.brand} - Modelo: ${car.model}`);
+    });
+    cleanFields()
+}
+
+function cleanFields() {
+    document.getElementById("addBrand").value = "";
+    document.getElementById("addModel").value = "";
+
+}
+
+function removeCars(index) {
+    if (cars.length <= 1 ){
+        console.log(`Não a mais carros na lista`);
+    }else{
+    cars.splice(index, 1);
+    cars.forEach((car) => {
+        console.log(`Marca: ${car.brand} - Modelo: ${car.model}`);
+    });
+    }
+}
