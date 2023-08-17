@@ -24,6 +24,16 @@ class CategoryService {
     addCategory(name){
         const id = this.nextcategoryID ++;
         const category = new Category(id, name);
-        this.categories.push(category)
+        this.categories.push(category);
     }
+}
+
+const categoryList = new CategoryService()
+
+function createCategory(){
+    const categoryName = "Doce";
+
+    categoryList.addCategory(categoryName);
+
+    console.log(categoryList.categories)
 }
