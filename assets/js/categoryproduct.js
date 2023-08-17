@@ -47,10 +47,10 @@ const productList = new ProductService()
 
 
 function createCategory(){
-    const categoryName = "Doce";
+    const categoryName = document.getElementById("categoryName").value;
     categoryList.addCategory(categoryName);
     console.log(categoryList.categories);
-    createProduct()
+    cleanFormFields() 
 }
 
 function createProduct(){
@@ -60,4 +60,11 @@ function createProduct(){
 
     productList.addProduct(productName, productPrice, productCategory)
     console.log(productList.products)
+}
+
+function cleanFormFields() {
+    document.getElementById("categoryName").value = "";
+    document.getElementById("productName").value = "";
+    document.getElementById("productPrice").value = "";
+    document.getElementById("productCategory").value = "";
 }
