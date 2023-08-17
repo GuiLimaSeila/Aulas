@@ -1,21 +1,21 @@
-console.error("empresas");
+console.error("Empresas");
 const companies = ["Apple", "Google", "Facebook"];
 
 companies.forEach(company => {
     console.log(`Hey, ${company}`);
 });
 
-console.error("numeros pares");
+console.error("Números pares");
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 numbers.forEach((number, index) => {
-    if (number % 2 == 0){
-        console.log("Isso é um numero par: " + number);
+    if (number % 2 == 0) {
+        console.log("Isso é um número par: " + number);
         console.log("Esse é seu Index: " + index)
     }
 });
 
-console.error("marcas de carros e seus modelos");
+console.error("Marcas de carros e seus modelos");
 const cars = [
     {
         marca: "Ford",
@@ -31,7 +31,7 @@ const cars = [
     },
     {
         marca: "Audi",
-        modelo: "a3",
+        modelo: "A3",
     },
 ];
 
