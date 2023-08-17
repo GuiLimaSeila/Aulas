@@ -45,7 +45,7 @@ function cleanFields() {
 }
 
 function removeCars(index) {
-    if (cars.length <= 1 ){
+    if (cars.length == 0 ){
         console.log(`Não a mais carros na lista`);
     }else{
     cars.splice(index, 1);
@@ -53,4 +53,4 @@ function removeCars(index) {
         console.log(`Marca: ${car.brand} - Modelo: ${car.model}`);
     });
     }
-}
+} 
