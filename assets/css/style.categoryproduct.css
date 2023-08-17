@@ -53,7 +53,7 @@ h2 {
     box-sizing: border-box;
 }
 
-#productInfo{
+#productInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,13 +83,13 @@ h2 {
     transform: scale(1.10);
 }
 
-.list-countainer{
+.list-countainer {
     background-color: #f9f9f9;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     max-height: 20rem;
-    overflow-y: auto ;
+    overflow-y: auto;
 }
 
 .list-countainer ul {
@@ -98,10 +98,48 @@ h2 {
     margin: 0;
 }
 
-.list-countainer li{
+.list-countainer li {
     margin-bottom: 0.72rem;
     padding: 0.72rem;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.categoriesList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editeButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.62rem 1.25rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.editeButton:hover {
+    background-color: #0069d9;
+    color: #fff;
+    transform: scale(1.10);
+}
+
+.deleteButton {
+    background-color: #fd1b1b;
+    color: #fff;
+    padding: 0.62rem 1.25rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: #e60e0e;
+    color: #fff;
+    transform: scale(1.10);
 }
