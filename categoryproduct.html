@@ -13,11 +13,28 @@
     <div id="container">
         <h1>🧦Categorias & Produtos</h1>
         <div class="form-container">
-            <h2>📁Cria Categoria</h2>
-            <label for="">Nome da categoria</label>
-            <input type="text" id="categoryName"required>
+            <h2>📁Criar Categoria</h2>
+            <label for="categoryName">Nome da categoria</label>
+            <input type="text" id="categoryName" required />
             <button class="btn">Criar categoria</button>
-
+        </div>
+        <div class="form-container">
+            <h2>🍣Criar Produto</h2>
+            <div id="productInfo">
+                <div class="productInputs">
+                    <label for="productName">Nome do produto</label>
+                    <input type="text" id="productName" required />
+                </div>
+                <div class="productInputs">
+                    <label for="productPrice">Preço:</label>
+                    <input type="number" id="productPrice" required />
+                </div>
+            </div>
+            <label for="">Categoria:</label>
+            <select name="" id="productCategory" required>
+                <!--Will be in JS ok my friend?!?!-->
+            </select>
+            <button class="btn">Criar protudo</button>
         </div>
     </div>
 </body>
