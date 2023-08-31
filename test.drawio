@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="kVPEiAS0NOduuUWb3Mfb" name="Página-1">
+        <mxGraphModel dx="826" dy="411" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="12" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="10" width="240" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="aa" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="12">
+                    <mxGeometry width="240" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=none;html=1;strokeWidth=3;fillColor=#eeeeee;strokeColor=#36393d;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="12" source="2" target="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="90" as="sourcePoint"/>
+                        <mxPoint x="140" y="-50" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=none;html=1;strokeWidth=3;fillColor=#eeeeee;strokeColor=#36393d;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="12" source="2" target="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-20" y="73" as="sourcePoint"/>
+                        <mxPoint x="230" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="NOME" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontColor=#000000;" vertex="1" parent="12">
+                    <mxGeometry x="70" y="10" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="- Atributo: Tipo" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontColor=#000000;spacing=1;" vertex="1" parent="12">
+                    <mxGeometry x="10" y="60" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="+ Metodo(): Retorno&amp;nbsp;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontColor=#000000;spacing=1;" vertex="1" parent="12">
+                    <mxGeometry x="30" y="190" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
